@@ -8,7 +8,6 @@ import javax.persistence.NoResultException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-
 import com.codepow.shemitonline.entity.Product;
 import com.codepow.shemitonline.form.ProductForm;
 import com.codepow.shemitonline.model.ProductInfo;
@@ -17,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
- 
+
 @Transactional
 @Repository
 public class ProductDAO {
