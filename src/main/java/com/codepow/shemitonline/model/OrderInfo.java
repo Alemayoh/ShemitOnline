@@ -1,4 +1,4 @@
-package com.codepow.shemitonline.entity;
+package com.codepow.shemitonline.model;
 import java.util.Date;
 import java.util.List;
  
