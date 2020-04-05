@@ -261,7 +261,7 @@ public class MainController {
          response.setContentType("image/jpeg, image/jpg, image/png, image/gif");
          response.getOutputStream().write(product.getImage());
       }
-      response.getOutputStream().close();
+      response.getOutputStream().close(); 
    }
  
 }
