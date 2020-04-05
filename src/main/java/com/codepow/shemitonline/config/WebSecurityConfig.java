@@ -1,4 +1,4 @@
-package com.codepow.shemitonlie.config;
+package com.codepow.shemitonline.config;
 
 import com.codepow.shemitonline.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.codepow.shemitonlie;
+package com.codepow.shemitonline;
 
 import java.util.Properties;
 import javax.sql.DataSource;
