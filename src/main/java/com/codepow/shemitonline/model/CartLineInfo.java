@@ -1,4 +1,4 @@
-package com.codepow.shemitonline.Model;
+package com.codepow.shemitonline.model;
 
 public class CartLineInfo {
 	

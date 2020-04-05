@@ -1,4 +1,4 @@
-package com.codepow.shemitonline.entity;
+package com.codepow.shemitonline.model;
 
 public class OrderDetailInfo {
     private String id;
