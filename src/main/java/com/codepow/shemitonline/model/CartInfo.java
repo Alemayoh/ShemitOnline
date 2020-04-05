@@ -1,4 +1,4 @@
-package com.codepow.shemitonline.Model;
+package com.codepow.shemitonline.model;
 
 import java.util.ArrayList;
 import java.util.List;
