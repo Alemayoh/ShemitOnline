@@ -8,20 +8,15 @@ import javax.persistence.NoResultException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-
 import com.codepow.shemitonline.entity.Product;
-<<<<<<< HEAD
-import com.codepow.shemitonlinet.form.ProductForm;
-=======
 import com.codepow.shemitonline.form.ProductForm;
->>>>>>> f667d88dd5d07c32da434eb67194b3407da3e50d
 import com.codepow.shemitonline.model.ProductInfo;
 import com.codepow.shemitonline.pagination.PaginationResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
- 
+
 @Transactional
 @Repository
 public class ProductDAO {
