@@ -1,4 +1,4 @@
-package com.codepow.shemitonline.Model;
+package com.codepow.shemitonline.model;
 import com.codepow.shemitonline.entity.Product;
 public class  ProductInfo {
     private String code;
