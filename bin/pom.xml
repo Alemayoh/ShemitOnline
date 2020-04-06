@@ -53,6 +53,7 @@
 		    <artifactId>spring-jdbc</artifactId>
 		    <version>5.2.5.RELEASE</version>
 		</dependency>
+		
 		<dependency>
 		    <groupId>org.thymeleaf.extras</groupId>
 		    <artifactId>thymeleaf-extras-springsecurity4</artifactId>
