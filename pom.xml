@@ -43,10 +43,17 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+		
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency> 
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>5.2.5.RELEASE</version>
+		</dependency>
+		
 		<dependency>
 		    <groupId>org.thymeleaf.extras</groupId>
 		    <artifactId>thymeleaf-extras-springsecurity4</artifactId>
