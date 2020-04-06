@@ -28,17 +28,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
  
       // Setting Service to find User in the database.
-      // And Setting PassswordEncoder
-	   
+      // And Setting PassswordEncoder   
       auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
    }
- 
-//   @Override
-//   public void configure(WebSecurity web) throws Exception {
-//       web
-//               .ignoring()
-//               .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**");
-//   }
+   
    @Override
    protected void configure(HttpSecurity http) throws Exception {
 	   
@@ -58,7 +51,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
  
       // Configuration for Login Form.
       http.authorizeRequests()
-		.antMatchers("/", "/home").permitAll()
+		.antMatchers("/", "/home","/resources/**", "/static/**", "/css/**").permitAll()
 		.anyRequest().authenticated()
 		.and()
 	.formLogin()
@@ -68,11 +61,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		 .failureUrl("/admin/login?error=true")//
 		.permitAll()
 		.and()
-	.logout()
-		.permitAll();
+	    .logout().logoutUrl("/admin/logout").logoutSuccessUrl("/");//.permitAll();
 //      http.authorizeRequests().and().formLogin()
 //            // 
-////            .loginProcessingUrl("/j_spring_security_check") // Submit URL
+////           .loginProcessingUrl("/j_spring_security_check") // Submit URL
 //            .loginPage("/admin/login")//
 //            .defaultSuccessUrl("/admin/accountInfo")//
 //            .failureUrl("/admin/login?error=true")//
